@@ -1,0 +1,383 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    text-transform:none;
+    transition: .2s linear;
+ 
+    
+}
+
+body {
+    margin: 0;
+    background-color:#674f35;
+    font-family: 'Nunito', sans-serif,monospace;
+    overflow-x: hidden;
+
+  }
+  .navs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    
+    
+  }
+  .navs h2{
+    color:#e1d7b2;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px #133129, 0 0 25px #bb7c3a ,0 0 5px #154c3d;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  nav li{
+    display: inline-block;
+  }
+  
+  nav li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 8px;
+   
+  }
+  nav li a:hover{
+    color: #fefffe;
+    border-bottom: 2px solid rgb(255, 255, 255);
+
+  }
+
+  .reservation-button{
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 10px 15px;
+    margin: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
+    margin-left: 50px;
+  }
+  .logo_part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+.logo {
+    width: 60px; 
+    height: auto;
+
+  }
+  
+  
+  #welcome {
+    position: relative;
+    text-align: center;
+    height: 550px; 
+    margin: 0;
+  }
+  
+  #welcome img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    overflow-y: hidden;
+  
+    
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+  
+  .welcome-text {
+    color: #f6f2e7;
+    position: absolute;
+    font-family: 'Nunito', sans-serif,monospace;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .welcome-text h5{
+    padding: 40px;
+    font-size: 17px;
+  }
+  .cards{
+    color: #f6f2e7;
+    background-color: #0b1715;
+    padding: 50px;
+    margin-top: 0;
+  }
+  
+  #specials {
+    padding: 50px;
+    background-color: #0b1715;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; 
+  }
+  
+  
+  .special {
+    /* aspect-ratio: 1; */
+    margin-bottom: 30px;
+  }
+  
+  .special img {
+    width: 250px;
+    margin-right: 30px;
+    height: 250px;
+    border-radius: 5px;
+  }
+  
+  .special img::hover {
+      transition: 0.5s;
+  }
+  footer {
+    padding: 20px 0;
+    text-align: center;
+    color: #f6f2e7;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .social-icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .footer-content p {
+    font-size: 0.8rem;
+  }
+
+
+  /*Menu Page*/
+  .menus{
+    background-color:#0b1715;
+  }
+
+.menus h2 {
+    text-align: center;
+    color: #f6f2e7;
+    padding: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color:  rgb(49, 56, 49);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1.5px solid #966f27;
+    color: #f6f2e7; 
+}
+
+th {
+    background-color: #25403a;
+    color: #f1b614;
+}
+
+.menus img {
+    max-width: 100px;
+}
+
+.appetizers, .main-dishes, .desserts {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #81642d;
+}
+
+
+/*Reservations Page */
+
+.reservation ,.contact{
+      background-color: #0b1715;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: space-between;
+     
+
+}
+.reservation img{
+  width: 500px;
+  height: 450px;
+  margin-top: 100px;
+  margin-left: 20px;
+ 
+}
+
+
+.reservation h2 {
+  text-align: left;
+  color: #f6f2e7;
+  padding-top: 50px;
+  padding-left: 150px;
+  margin-top: 40px;
+}
+
+form {
+  margin: 30px;
+  border: 2px solid #aeb5b4;
+  padding: 30px;
+  width: 50vw;
+  border-radius: 20px;
+  background-image: linear-gradient(to right,#0b1715,#0b1715 ,#133129);
+  /* box-shadow: 0px 4px 6px 0px rgba(194, 187, 187, 0.906), 0px 4px 10px 0px rgba(234, 226, 226, 0.916)  */
+
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #f1b614;
+  margin-top: 10px;
+}
+
+input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #154c3d;
+}
+
+input:focus{
+  background-color: #cac3c3;
+}
+
+.reservation button {
+  background-color: #4CAF50;
+  color: #f6f2e7;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; 
+  margin-left: 50px;
+
+}
+
+.contact h2{
+  text-align: left;
+  color: #f6f2e7;
+  padding-top: 50px;
+  padding-left: 200px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+.contact form{
+  margin: 35px;
+  border: 2px solid #aeb5b4;
+  padding: 30px;
+  width: 40vw;
+  border-radius: 20px;
+  background-image: linear-gradient(to right,#0b1715,#0b1715 ,#133129);
+}
+
+.contact button{
+  background-color: #4CAF50;
+  color: #f6f2e7;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; 
+  margin-left: 50px;
+
+}
+
+main {
+  padding: 2rem;
+}
+
+.about-us {
+  background-color:#0b1715;
+  padding: 3rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #F28E1C;
+  margin-bottom: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.description {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.special-features {
+  background-color: #F28E1C;
+  padding: 3rem 2rem;
+}
+
+.special-features .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.feature {
+  flex-basis: 30%;
+  text-align: center;
+  color: white;
+}
+
+.feature h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature p {
+  font-size: 1rem;
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
